@@ -1,0 +1,28 @@
+.footerWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    
+}
+.footerWrapper div p{
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.footerWrapper div p a{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.footerWrapper div p .questions{
+    text-decoration: none;
+}
+
+.footerWrapper div p .questions:hover{
+    text-decoration: underline;
+}

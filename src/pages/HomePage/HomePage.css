@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.homeConatainer{
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/9f46b569-aff7-4975-9b8e-3212e4637f16/3bdef7cc-09d3-4923-bad6-7e2d7ec6c1d1/NG-en-20240415-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    width: 100vw;
+    height: 89vh;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+
+}
+.homeConatainer .homeWrapper{  
+    height: 89vh;
+    background: rgb(0 0 0 / 40%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%); 
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+
+}
+.homeConatainer .homeWrapper .header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+    align-items: center;
+}
+.homeConatainer .homeWrapper .centerBody{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 16px;
+}
+
+.homeConatainer .homeWrapper .centerBody .heading{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.homeConatainer .homeWrapper .centerBody .watch{
+color: #fff;
+font-size: 1.5rem;
+font-weight: 400;
+}
+
+.homeConatainer .homeWrapper .centerBody .ready{ 
+font-size: 1.25rem;
+font-weight: 400;
+line-height: 1.5;
+color: #fff;
+}
+
+.homeConatainer .homeWrapper .centerBody .centerDown{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.homeConatainer .homeWrapper .centerBody .centerDown .mail{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 8px;
+    border: 1px solid green;
+    border-radius: 8px;
+
+}
+.homeConatainer .homeWrapper .centerBody .centerDown .mail input{ 
+
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    width: 400px;
+    border: none;
+}
+
+
+.homeConatainer .homeWrapper .centerBody .centerDown .getStartedBtn{
+    background-color: red;
+    color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+.homeConatainer .homeWrapper .centerBody .centerDown .getStartedBtn button{
+    background-color: red;
+    padding: 2px 8px;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+
+.loading{
+    width: 3rem;
+    height: 3.75rem;
+    outline: 2px solid rgb(0, 0, 0);
+    outline-offset: -2px;
+    display: block;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+}
