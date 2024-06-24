@@ -1,5 +1,6 @@
+// import "./Video.css";
 import { useEffect, useState } from "react";
-import "../TopPicks/TopPicks.css"
+import "./../MovieCategory/TopPicks/TopPicks.css";
 import axios from "axios";
 
  interface movies{
@@ -9,11 +10,8 @@ import axios from "axios";
   release_date: string
  }
 
-
-
-const OnlyOnNetflix = () => {
-  
-        const [movies, setMovies] = useState<movies[]>([]);
+const Video = () => {
+    const [movies, setMovies] = useState<movies[]>([]);
     const apiKey = "ef68f6f884ee63a5d3115f1060501444";
     const videos = "https://api.themoviedb.org/3/movie/now_playing";
     
@@ -66,8 +64,8 @@ const OnlyOnNetflix = () => {
     
 
   return (
-    <>
-    <div className="table">
+    <div>
+      <div className="table">
         <h2>Today's Top Pick for you</h2>
         <div className="card">
             {movies.map((items)=>(
@@ -84,10 +82,8 @@ const OnlyOnNetflix = () => {
         </div>
        
     </div>
-    </>
+    </div>
   )
 }
-   
 
-
-export default OnlyOnNetflix
+export default Video

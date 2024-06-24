@@ -5,7 +5,9 @@ import PageBackground from './components/PageBackground/PageBackground';
 import SignIn from './pages/SignIn/SignIn';
 import HomePage from './pages/HomePage/HomePage';
 import Streaming from './pages/StreamingPage/Streaming';
-import OnlyOnNetflix from './components/MovieCategory/OnlyOnNetflix/OnlyOnNetflix';
+import Video from './components/Video/Video';
+
+
 
 function App() {
   
@@ -19,7 +21,7 @@ function App() {
 
         <Route path='home' element={<HomePage />} />
         <Route path='streaming' element={<Streaming />} />
-        <Route path='watch' element={<OnlyOnNetflix/>} />
+        <Route path='video' element={<Video/>} />
 
       </Routes>
 

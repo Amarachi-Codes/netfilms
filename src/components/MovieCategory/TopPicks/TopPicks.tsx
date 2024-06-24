@@ -41,7 +41,7 @@ const [movies, setMovies] = useState<movies[]>([]);
                 <div className="movieContainer" key={items.id}>
 
                     {items.poster_path &&(
-                        <NavLink to={"../watch"}><img src={`https://image.tmdb.org/t/p/w200${items.poster_path}`} alt={`${items.title} Poster`} /></NavLink>
+                        <NavLink to={"../video"}><img src={`https://image.tmdb.org/t/p/w200${items.poster_path}`} alt={`${items.title} Poster`} /></NavLink>
                         
                     )}
                     
