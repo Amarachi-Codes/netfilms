@@ -1,0 +1,10 @@
+.streamingContent{
+    overflow: hidden;
+}
+
+.streaming-wrapper {
+    background: url("https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABRsetIvjfEjF1NjADBFoYyaln0rPhcAqetVs107OlWIVO1XODfvVT9FsUSysxWe9zS6XxmlvggYyeqgfy4PA2e3-puzRLox-Cx2-.webp?r=32a");
+    width: 100vw;
+    height: 90vh;
+    
+}

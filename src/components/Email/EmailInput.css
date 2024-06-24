@@ -1,0 +1,55 @@
+.centerDown{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+ .centerDown .mail{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 8px;
+    border: 1px solid green;
+    border-radius: 8px;
+
+}
+ .centerDown .mail input{ 
+
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    width: 400px;
+    border: none;
+}
+
+
+.centerDown .getStartedBtn{
+    background-color: red;
+    color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+.centerDown .getStartedBtn button{
+    background-color: red;
+    padding: 2px 8px;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+.ready{ 
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    }

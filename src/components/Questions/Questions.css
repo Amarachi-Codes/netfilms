@@ -1,0 +1,12 @@
+.questionWrapper .question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px; 
+    background-color: rgb(65, 65, 65);
+}
+.questionWrapper .answer{
+    padding: 16px 20px; 
+    background-color: rgb(65, 65, 65);
+    margin-top: 2px;
+}

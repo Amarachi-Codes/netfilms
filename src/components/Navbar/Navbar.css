@@ -1,0 +1,45 @@
+.navWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 1rem 4rem;
+    position: sticky;
+    top:0;
+}
+
+.navWrapper .navLeft{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navWrapper .navLeft div h1{
+    color: red;
+    font-size: 32px;
+}
+
+.navWrapper .navLeft div a{
+    text-decoration: none;
+    padding-right: 16px;
+    color: #fff;
+}
+
+.profile-icon{
+    width: 18px;
+    height: 16px;
+}
+
+.navWrapper .navRight{
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+}
+
+.navWrapper .navRight a{
+    text-decoration: none;
+    padding-right: 16px;
+    color: #fff;
+    
+
+}
