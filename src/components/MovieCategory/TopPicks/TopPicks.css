@@ -4,10 +4,16 @@
     gap: 30px;
 }
 .table{
-    overflow-y: scroll;
+    overflow:auto;
+    white-space: nowrap;
 }
-.table h2{
+.table::-webkit-scrollbar{
+    display: none;
+}
+h2{
     color: #fff;
+    padding-left: 2rem;
+    
     
 }
 
@@ -18,4 +24,19 @@
     width: 560px; 
     height: 315px;
     border:0px;
+}
+.scrollRight{
+   /* position: absolute;
+   bottom: -170px;
+   left: 1440px; */
+    position: relative;
+    bottom: 220px;
+    left: 1440px;
+    height: 25px;
+    margin-bottom: -25px;
+   
+}
+
+.scrollRight .next{
+    font-size: 60px;
 }

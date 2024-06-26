@@ -18,7 +18,7 @@ const Streaming = () => {
     <div className="streamingContent">
       <div className="streaming-wrapper">
         <Navbar />
-        <Hero />
+        <Hero age="13+" caption="  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odio sunt iusto non consequuntur, doloribus tempore iste eligendi possimus rerum!   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odio sunt iusto non consequuntur, doloribus tempore iste eligendi possimus rerum!" />
       </div>
 
       {loading ? (

@@ -24,6 +24,9 @@
     padding-right: 16px;
     color: #fff;
 }
+.navWrapper .navLeft div a:focus{
+    font-weight: bold;
+}
 
 .profile-icon{
     width: 18px;
@@ -33,12 +36,12 @@
 .navWrapper .navRight{
     display: flex;
     align-items: center;
-    padding-right: 16px;
+    gap: 20px;
 }
 
 .navWrapper .navRight a{
     text-decoration: none;
-    padding-right: 16px;
+    /* padding-right: 16px; */
     color: #fff;
     
 

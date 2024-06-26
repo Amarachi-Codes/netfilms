@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import "./TopPicks.css";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
+import { MdNavigateNext } from "react-icons/md";
+
  interface movies{
     id: number;
   title: string;
@@ -32,12 +34,39 @@ const [movies, setMovies] = useState<movies[]>([]);
         }
     }
 
+   
+
+    // const videoChanger = (id:number)=>{
+    //     let videoElement: React.ReactNode;
+    //     switch(id){
+    //         case 1022789:
+    //             videoElement = <iframe className="iframe"  src="https://www.youtube.com/embed/LEjhY15eCx0?si=RV6Zo4PKGwQs4JvO" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    //             break;
+    //         case 653346:
+    //             videoElement = <iframe className="iframe" src="https://www.youtube.com/embed/XtFI7SNtVpY?si=bw_T5jkxNeCEUPAY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    //         break;
+    //         case 639720:
+    //             videoElement = <iframe  className="iframe" src="https://www.youtube.com/embed/NISb51kjq7U?si=QIH2GjiY_QV9eozX" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    //         break;
+    //         case 573435:
+    //             videoElement = <iframe className="iframe" src="https://www.youtube.com/embed/hRFY_Fesa9Q?si=8RlunR7n--4OkQvU" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    //         break;
+             
+        
+    //         default:
+    //             videoElement =<p>Unable to load</p>
+            
+    //         }
+    //     }
+
   return (
     <>
+    <h2>Today's Top Pick for you</h2>
     <div className="table">
-        <h2>Today's Top Pick for you</h2>
+        
         <div className="card">
             {movies.map((items)=>(
+               
                 <div className="movieContainer" key={items.id}>
 
                     {items.poster_path &&(
@@ -50,6 +79,9 @@ const [movies, setMovies] = useState<movies[]>([]);
                     {/* <h3>{items.title}</h3> */}
                 </div>
             ))}
+        </div>
+        <div className="scrollRight">
+            <MdNavigateNext className="next" color="#fff"/>
         </div>
        
     </div>

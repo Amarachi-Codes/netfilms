@@ -13,6 +13,8 @@ import axios from "axios";
 const Video = () => {
     const [movies, setMovies] = useState<movies[]>([]);
     const apiKey = "ef68f6f884ee63a5d3115f1060501444";
+    //  const movieId = 653346;
+    // const video = "https://api.themoviedb.org/3/movie/";
     const videos = "https://api.themoviedb.org/3/movie/now_playing";
     
     useEffect(()=>{
@@ -22,6 +24,7 @@ const Video = () => {
     const fetchData = async()=>{
         try {
             await axios.get(`${videos}?api_key=${apiKey}`).then((response)=>{
+                // await axios.get(`${video}${movieId}/videos?api_key=${apiKey}`).then((response)=>{
                 const result = response.data.results
                 console.log(result);
                 setMovies(result)

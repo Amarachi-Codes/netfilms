@@ -6,3 +6,73 @@
 .atlas-wrapper .atlas-img {
    height: 13.2vw;
 }
+.playContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem 0 4rem;
+}
+.playContent .buttonContainer{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.playContent .buttonContainer .playWrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 16px 20px;
+ border-radius: 8px;
+ border: 1px solid #fff;
+}
+.playContent .buttonContainer .playWrapper .play{
+ color: #000;
+ background-color: #fff;
+ border: none;
+ width: 30px;
+ 
+ 
+
+}
+.playContent .buttonContainer .infoWrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #4f5154;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid #4f5154;
+}   
+
+.playContent .buttonContainer .infoWrapper .info{
+    color: #fff;
+    background-color: #4f5154;
+    width: 60px;
+    border: none;
+}
+.playContent .rating{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.movieDescription{
+    color: #fff;
+    width: 40%;
+    margin: 24px 0;
+}
+.hero-wrapper .titlewrapper{
+    color: #fff;
+    font-size: large;
+}
+.volume{
+    border-radius: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #fff;
+}
+.ageRating{
+    background-color: #4f5154;
+    padding: 6px 20px 6px 6px;
+    color: #fff;
+    border-left: 2px solid #fff;
+}
