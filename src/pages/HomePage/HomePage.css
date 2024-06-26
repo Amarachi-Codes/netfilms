@@ -261,9 +261,9 @@ color: #fff;
     padding: 4rem 6rem;
     border-bottom: 8px solid rgb(35, 35, 35);
 }
-.profileWrapper .createProfile{
-    /* width: 350px; */
-}
+/* .profileWrapper .createProfile{
+    width: 350px;
+} */
 .faq{
     display: flex;
     flex-direction: column;
