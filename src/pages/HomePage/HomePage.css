@@ -13,6 +13,8 @@
     margin: 0;
 
 }
+
+
 .homeConatainer .homeWrapper{  
     height: 89vh;
     background: rgb(0 0 0 / 40%);
@@ -25,8 +27,24 @@
 .homeConatainer .homeWrapper .header{
     display: flex;
     justify-content: space-between;
-    padding: 0 4rem;
+    padding: 2rem 4rem;
     align-items: center;
+}
+.homeConatainer .homeWrapper .header .netflixLogo{
+    width: 160px;
+}
+.homeConatainer .homeWrapper .header .headerRight{
+    display: flex;
+    gap: 16px;
+}
+.homeConatainer .homeWrapper .header .btnSignin{
+    padding: 4px 16px;
+    background-color: red;
+    color: #fff;
+    font-size: large;
+    border: 1px solid red;
+    border-radius: 4px;
+
 }
 .homeConatainer .homeWrapper .centerBody{
 display: flex;
@@ -119,17 +137,25 @@ color: #fff;
     gap: 8%;
     background-color: #000;
     color: #fff;
+    padding: 0 4rem;
     border-top: 8px solid rgb(35, 35, 35);
     border-bottom: 8px solid rgb(35, 35, 35);
     
 }
 
 .watch .watchVideo .playVideo{
-    position: absolute;
+    /* position: absolute;
     top: 100%;
     bottom: 30%;
-    left: 47%;
+    left: 47%; */
     /* max-width: 73%; */
+    position: relative;
+    bottom: 390px;
+    left: 80px;
+    width: 480px;
+    margin-bottom: -270px;
+    height: 270px;
+    
    
 }
 /* .watch .watchVideo .playVideo{
@@ -176,6 +202,10 @@ color: #fff;
     border: 2px solid rgba(128, 128, 128, 0.7); 
     border-radius: 14px;
     color: #fff;
+    position: relative;
+    bottom: 160px;
+    left: 140px;
+    margin-bottom: -120px;
    
     
     

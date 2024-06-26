@@ -3,6 +3,8 @@ import Footer from "../../components/Footer/Footer";
 import Questions from "../../components/Questions/Questions";
 import "./HomePage.css";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import NetflixLogo from "../../assets/NetflixLogo.svg";
+import LangButton from "../../components/langButton/LangButton";
 
 
 
@@ -15,9 +17,11 @@ const HomePage = () => {
 
                         {/* <div> */}
                         <div className="header">
-                            <h1 className="logo">Netflix</h1>
-                            <div>
-                                <button>Signin</button>
+                            <img className="netflixLogo" src={NetflixLogo} alt="" />
+
+                            <div className="headerRight">
+                                <LangButton title="English" list={["English", "Igbo","Yoruba", "Spanish","French"]} width="widthNormal"/>
+                                <button className="btnSignin">Signin</button>
                             </div>
                         </div>
                         <div className="centerBody">
@@ -105,7 +109,7 @@ const HomePage = () => {
                               devices. You can watch as much as you want, whenever you want without a
                             single commercial – all for one low monthly price. There's always something 
                             new to discover and new TV shows and movies are added every week!"/>
-                    
+
                     <Questions title="How much does Netflix cost?" answer="Watch Netflix on your smartphone, tablet, Smart TV, 
                             laptop, or streaming device, all for one fixed monthly fee. Plans range 
                             from ₦1,600 to ₦5,000 a month. No extra costs, no contracts."/>
@@ -117,7 +121,7 @@ const HomePage = () => {
                     You can also download your favorite shows with the iOS, Android, or Windows 10 app. 
                     Use downloads to watch while you're on the go and without an internet connection. 
                     Take Netflix with you anywhere."/>
- 
+
                     <Questions title="How do I cancel?" answer="Netflix is flexible. There are no pesky contracts 
                     and no commitments. You can easily cancel your account online in two clicks. 
                     There are no cancellation fees – start or stop your account anytime."/>
@@ -132,8 +136,8 @@ const HomePage = () => {
                     let you restrict the maturity rating of content kids can watch and block 
                     specific titles you don’t want kids to see."/>
                     <div className="center">
-                    <EmailInput/>
-                    </div>   
+                        <EmailInput />
+                    </div>
 
                 </div>
                 <Footer />
