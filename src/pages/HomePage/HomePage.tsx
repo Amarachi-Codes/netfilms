@@ -5,6 +5,9 @@ import "./HomePage.css";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import NetflixLogo from "../../assets/NetflixLogo.svg";
 import LangButton from "../../components/langButton/LangButton";
+import { NavLink } from "react-router-dom";
+import SignIn from "../SignIn/SignIn";
+
 
 
 
@@ -12,16 +15,16 @@ const HomePage = () => {
     return (
         <>
             <div>
-                <div className="homeConatainer">
+                 <div className="homeConatainer">
                     <div className="homeWrapper">
 
-                        {/* <div> */}
+                          
                         <div className="header">
                             <img className="netflixLogo" src={NetflixLogo} alt="" />
 
                             <div className="headerRight">
                                 <LangButton title="English" list={["English", "Igbo","Yoruba", "Spanish","French"]} width="widthNormal"/>
-                                <button className="btnSignin">Signin</button>
+                                <NavLink to="/page/signin"><button className="btnSignin">Signin</button></NavLink>
                             </div>
                         </div>
                         <div className="centerBody">
@@ -39,13 +42,13 @@ const HomePage = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* </div> */}
+                        
 
                     </div>
-                </div>
+                </div> 
 
                 <div className="watch">
-                    <div>
+                    <div className="watchWapper">
                         <h2>Enjoy on your TV</h2>
                         <h5>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h5>
                     </div>
@@ -81,8 +84,8 @@ const HomePage = () => {
                 </div>
                 <div className="watchEverywhere">
                     <div className="watchContent">
-                        <h1>Watch</h1>
-                        <h1>everywhere</h1>
+                        <h1>Watch<br/>
+                        everywhere</h1>
                         <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
                     </div>
                     <div className="content2">

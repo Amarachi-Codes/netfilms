@@ -8,3 +8,14 @@
     height: 90vh;
     
 }
+.loader{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 2rem 4rem;
+    background-color:#131313;
+    color: #fff;
+}
+.loader p{
+    font-weight: bold;
+}

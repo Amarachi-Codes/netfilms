@@ -7,7 +7,9 @@
     position: sticky;
     top:0;
 }
-
+.netflixLogo{
+    width: 160px;
+}
 .navWrapper .navLeft{
     display: flex;
     align-items: center;

@@ -74,7 +74,7 @@ const [movies, setMovies] = useState<movies[]>([]);
                         
                     )}
                     
-                    <h3 className="myID">{items.id}</h3>
+                    {/* <h3 className="myID">{items.id}</h3> */}
  
                     {/* <h3>{items.title}</h3> */}
                 </div>

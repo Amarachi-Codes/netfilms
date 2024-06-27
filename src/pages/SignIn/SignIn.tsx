@@ -1,12 +1,14 @@
 import Footer from "../../components/Footer/Footer";
 import "./SignIn.css";
+import netflixlogo from "../../assets/NetflixLogo.svg";
 
 const SignIn = () => {
   return (
     <>
       <div className="SignContainer">
         <div>
-          <h1 className="logo">Netflix</h1>
+          <img className="netflixLogo" src={netflixlogo} alt="" />
+          {/* <h1 className="logo">Netflix</h1> */}
 
         </div>
         <div className="signinWrapper">
@@ -39,8 +41,9 @@ const SignIn = () => {
               </div>
             </div>
           </div>
-          <Footer />
+          
         </div>
+        <Footer />
       </div>
     </>
   )

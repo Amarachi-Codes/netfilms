@@ -4,9 +4,15 @@
     height: 2.5rem;
     display: block;
 }
+
+.netflixLogo{
+    width: 160px;
+    margin: 2rem ;
+}
 .SignContainer{
     overflow-x: hidden;
 }
+
 .signinWrapper{
     display: flex;
     flex-direction: column;

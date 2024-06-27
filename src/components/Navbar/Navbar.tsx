@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import { IoSearch } from "react-icons/io5";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { RiArrowDownSFill } from "react-icons/ri";
+import netflixlogo from "../../assets/NetflixLogo.svg";
+
 
 const Navbar = () => {
     return (
@@ -11,7 +13,8 @@ const Navbar = () => {
 
                 <div className="navLeft">
                     <div>
-                        <h1>Netflix</h1>
+                        <img className="netflixLogo" src={netflixlogo} alt="" />
+                        {/* <h1>Netflix</h1> */}
                     </div>
                     <div>
                     <NavLink to=""> Home</NavLink>

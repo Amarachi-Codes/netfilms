@@ -5,8 +5,8 @@
 }
 
 .homeConatainer{
-    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/9f46b569-aff7-4975-9b8e-3212e4637f16/3bdef7cc-09d3-4923-bad6-7e2d7ec6c1d1/NG-en-20240415-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
-    width: 100vw;
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/9f46b569-aff7-4975-9b8e-3212e4637f16/3bdef7cc-09d3-4923-bad6-7e2d7ec6c1d1/NG-en-20240415-popsignuptwoweeks-perspective_alpha_website_medium.jpg"); 
+    max-width: 100vw;
     height: 89vh;
     overflow-x: hidden;
     padding: 0;
@@ -37,8 +37,8 @@
     display: flex;
     gap: 16px;
 }
-.homeConatainer .homeWrapper .header .btnSignin{
-    padding: 4px 16px;
+.homeConatainer .homeWrapper .header .headerRight a .btnSignin{
+    padding: 14px 16px;
     background-color: red;
     color: #fff;
     font-size: large;
@@ -137,10 +137,17 @@ color: #fff;
     gap: 8%;
     background-color: #000;
     color: #fff;
-    padding: 0 4rem;
+    padding: 0 8rem;
     border-top: 8px solid rgb(35, 35, 35);
     border-bottom: 8px solid rgb(35, 35, 35);
     
+}
+.watch .watchWapper h2{
+    padding: 0 0 8px 10rem;
+    margin: 0;
+}
+.watch .watchWapper h5{
+    padding-left: 10rem;
 }
 
 .watch .watchVideo .playVideo{
@@ -188,6 +195,8 @@ color: #fff;
 .strangerWrapper .download h2{
     font-size: 32px;
     line-height: 2rem;
+    margin: 0;
+    padding: 0 0 8px 0;
 }
 
 .stranger {
@@ -238,6 +247,8 @@ color: #fff;
 .watchEverywhere .watchContent h1{
     font-size: 42px;
     font-weight: 900;
+    padding-bottom: 12px;
+    
 }
 
 .watchEverywhere .content2{
@@ -261,6 +272,11 @@ color: #fff;
     padding: 4rem 6rem;
     border-bottom: 8px solid rgb(35, 35, 35);
 }
+.profileWrapper .createProfile h2{
+    margin: 0;
+    padding: 16px 0;
+
+}
 /* .profileWrapper .createProfile{
     width: 350px;
 } */
@@ -275,6 +291,7 @@ color: #fff;
 }
 .faq h2{
     text-align: center;
+    padding-bottom: 20px;
 }
 .faq .question{
     display: flex;
