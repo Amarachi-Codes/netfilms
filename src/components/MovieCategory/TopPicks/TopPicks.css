@@ -10,6 +10,12 @@
     white-space: nowrap;
     
 }
+.scrollableContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -35px;
+  }
 .table::-webkit-scrollbar{
     display: none;
 }
@@ -28,18 +34,34 @@ h2{
     height: 315px;
     border:0px;
 }
-.scrollRight{
-   /* position: absolute;
-   bottom: -170px;
-   left: 1440px; */
-    position: relative;
-    bottom: 220px;
-    left: 1400px;
-    height: 25px;
+
+.scrollLeft{
+    position: sticky;
+    top: 185px;
+    left: -1400px;
+    height: 65px;
+    width: 65px;
     margin-bottom: -25px;
-   
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.scrollRight{
+    position: sticky;
+    bottom: 190px;
+    left: 1400px;
+    height: 65px;
+    width: 65px;
+    margin-bottom: -25px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+
 }
 
-.scrollRight .next{
+.next{
     font-size: 60px;
 }
+

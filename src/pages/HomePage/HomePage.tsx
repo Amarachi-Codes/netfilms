@@ -6,12 +6,13 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import NetflixLogo from "../../assets/NetflixLogo.svg";
 import LangButton from "../../components/langButton/LangButton";
 import { NavLink } from "react-router-dom";
-import SignIn from "../SignIn/SignIn";
+
 
 
 
 
 const HomePage = () => {
+
     return (
         <>
             <div>

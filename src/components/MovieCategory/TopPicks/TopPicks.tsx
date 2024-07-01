@@ -1,8 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./TopPicks.css";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
 import { MdNavigateNext } from "react-icons/md";
+import { GrFormPrevious } from "react-icons/gr";
+
+
 
  interface movies{
     id: number;
@@ -13,7 +16,10 @@ import { MdNavigateNext } from "react-icons/md";
 
 const TopPicks = () => {
 const [movies, setMovies] = useState<movies[]>([]);
-    const apiKey = "ef68f6f884ee63a5d3115f1060501444";
+const scrollContainerRef = useRef<HTMLDivElement>(null);    
+
+
+const apiKey = "ef68f6f884ee63a5d3115f1060501444";
     const videos = "https://api.themoviedb.org/3/movie/now_playing";
     
     useEffect(()=>{
@@ -34,7 +40,26 @@ const [movies, setMovies] = useState<movies[]>([]);
         }
     }
 
-   
+
+    const scrollRight = () => {
+        if (scrollContainerRef.current) {
+          scrollContainerRef.current.scrollBy({
+            left: 800,
+            behavior: "smooth",
+          });
+        }
+      };
+    
+
+      const scrollLeft = () => {
+        if (scrollContainerRef.current) {
+          scrollContainerRef.current.scrollBy({
+            left: -800,
+            behavior: "smooth",
+          });
+        }
+      };
+
 
     // const videoChanger = (id:number)=>{
     //     let videoElement: React.ReactNode;
@@ -62,13 +87,18 @@ const [movies, setMovies] = useState<movies[]>([]);
   return (
     <>
     <h2>Today's Top Pick for you</h2>
-    <div className="table">
+    <div className="scrollableContainer">
+    <div className="scrollLeft">
         
-        <div className="card">
+        <GrFormPrevious className="next" color="#fff" onClick={scrollLeft}/>
+    </div>
+    <div className="table" ref={scrollContainerRef}>
+    
+        
+        <div className="card" >
             {movies.map((items)=>(
                
-                <div className="movieContainer" key={items.id}>
-
+                <div className="movieContainer" key={items.id} >
                     {items.poster_path &&(
                         <NavLink to={"../video"}><img src={`https://image.tmdb.org/t/p/w200${items.poster_path}`} alt={`${items.title} Poster`} /></NavLink>
                         
@@ -79,11 +109,14 @@ const [movies, setMovies] = useState<movies[]>([]);
                     {/* <h3>{items.title}</h3> */}
                 </div>
             ))}
+            
         </div>
         <div className="scrollRight">
-            <MdNavigateNext className="next" color="#fff"/>
+        
+            <MdNavigateNext className="next" color="#fff" onClick={scrollRight}/>
         </div>
        
+    </div>
     </div>
     </>
   )
