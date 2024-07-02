@@ -21,7 +21,7 @@ function App() {
 
         <Route path='/' element={<HomePage />} />
         <Route path='streaming' element={<Streaming />} />
-        <Route path='video' element={<Video/>} />
+        <Route path='/video/:id' element={<Video/>} />
 
       </Routes>
 

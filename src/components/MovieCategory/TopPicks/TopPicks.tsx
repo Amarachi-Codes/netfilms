@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import "./TopPicks.css";
 import axios from "axios";
-import { NavLink } from "react-router-dom";
 import { MdNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
+import { useNavigate } from "react-router-dom";
+
+
 
 
 
@@ -16,7 +18,8 @@ import { GrFormPrevious } from "react-icons/gr";
 
 const TopPicks = () => {
 const [movies, setMovies] = useState<movies[]>([]);
-const scrollContainerRef = useRef<HTMLDivElement>(null);    
+const scrollContainerRef = useRef<HTMLDivElement>(null);  
+const navigate = useNavigate() 
 
 
 const apiKey = "ef68f6f884ee63a5d3115f1060501444";
@@ -60,29 +63,10 @@ const apiKey = "ef68f6f884ee63a5d3115f1060501444";
         }
       };
 
-
-    // const videoChanger = (id:number)=>{
-    //     let videoElement: React.ReactNode;
-    //     switch(id){
-    //         case 1022789:
-    //             videoElement = <iframe className="iframe"  src="https://www.youtube.com/embed/LEjhY15eCx0?si=RV6Zo4PKGwQs4JvO" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    //             break;
-    //         case 653346:
-    //             videoElement = <iframe className="iframe" src="https://www.youtube.com/embed/XtFI7SNtVpY?si=bw_T5jkxNeCEUPAY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    //         break;
-    //         case 639720:
-    //             videoElement = <iframe  className="iframe" src="https://www.youtube.com/embed/NISb51kjq7U?si=QIH2GjiY_QV9eozX" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    //         break;
-    //         case 573435:
-    //             videoElement = <iframe className="iframe" src="https://www.youtube.com/embed/hRFY_Fesa9Q?si=8RlunR7n--4OkQvU" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    //         break;
-             
-        
-    //         default:
-    //             videoElement =<p>Unable to load</p>
-            
-    //         }
-    //     }
+       const playVideo =(id:number)=>{
+             navigate(`/video/${id}`)
+       }
+    
 
   return (
     <>
@@ -100,13 +84,14 @@ const apiKey = "ef68f6f884ee63a5d3115f1060501444";
                
                 <div className="movieContainer" key={items.id} >
                     {items.poster_path &&(
-                        <NavLink to={"../video"}><img src={`https://image.tmdb.org/t/p/w200${items.poster_path}`} alt={`${items.title} Poster`} /></NavLink>
-                        
+                        <div onClick={()=>playVideo(items.id)}>
+                        <img src={`https://image.tmdb.org/t/p/w200${items.poster_path}`} alt={`${items.title} Poster`} />
+                        </div>
                     )}
                     
                     {/* <h3 className="myID">{items.id}</h3> */}
  
-                    {/* <h3>{items.title}</h3> */}
+                    {/* <h3 style={{color:'#fff'}}>{items.title}</h3> */}
                 </div>
             ))}
             
@@ -115,8 +100,10 @@ const apiKey = "ef68f6f884ee63a5d3115f1060501444";
         
             <MdNavigateNext className="next" color="#fff" onClick={scrollRight}/>
         </div>
+        
        
     </div>
+    
     </div>
     </>
   )

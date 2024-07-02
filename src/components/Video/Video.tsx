@@ -1,92 +1,276 @@
-// import "./Video.css";
-import { useEffect, useState } from "react";
-import "./../MovieCategory/TopPicks/TopPicks.css";
-import axios from "axios";
-
- interface movies{
-    id: number;
-  title: string;
-  poster_path: string;
-  release_date: string
- }
+import "./Video.css";
+import { useParams } from "react-router-dom";
 
 const Video = () => {
-    const [movies, setMovies] = useState<movies[]>([]);
-    const apiKey = "ef68f6f884ee63a5d3115f1060501444";
-    //  const movieId = 653346;
-    // const video = "https://api.themoviedb.org/3/movie/";
-    const videos = "https://api.themoviedb.org/3/movie/now_playing";
-    
-    useEffect(()=>{
-        fetchData()
-    },[])
+    const { id } = useParams<{ id: string }>()
 
-    const fetchData = async()=>{
-        try {
-            await axios.get(`${videos}?api_key=${apiKey}`).then((response)=>{
-                // await axios.get(`${video}${movieId}/videos?api_key=${apiKey}`).then((response)=>{
-                const result = response.data.results
-                console.log(result);
-                setMovies(result)
-                
-            })
-        } catch (error) {
-            console.log(`Error fetching Data:${error}`);
-            
+
+    const videoChanger = (id: number) => {
+        switch (id) {
+            case 1022789:
+                return (
+                    <iframe
+                        className="iframe"
+                        src="https://www.youtube.com/embed/LEjhY15eCx0?si=RV6Zo4PKGwQs4JvO"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                    >
+                    </iframe>
+                );
+            case 653346:
+                return (
+                    <iframe
+                        className="iframe"
+                        src="https://www.youtube.com/embed/XtFI7SNtVpY?si=bw_T5jkxNeCEUPAY"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                    >
+                    </iframe>
+                );
+                case 786892:
+                    return(
+                        <iframe
+                        className="iframe"
+                        src="https://www.youtube.com/embed/s33QksgkcRo?si=Le9rG0lCvzsvYtte"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                    >
+                    </iframe>
+                    );
+                    case 762441:
+                        return(
+                            <iframe
+                            className="iframe"
+                            src="https://www.youtube.com/embed/YPY7J-flzE8?si=pYkzMN0ii9M9mtKa"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        >
+                        </iframe> 
+                        );
+                        case 519182:
+                        return(
+                            <iframe
+                            className="iframe"
+                            src="https://www.youtube.com/embed/qQlr9-rF32A?si=5zOXGVopAODlX8o_" 
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        >
+                        </iframe> 
+                        );
+                        case 1086747:
+                        return(
+                            <iframe
+                            className="iframe"
+                            src="https://www.youtube.com/embed/Uy1JzSsN9Fg?si=aQxgPAoyxkRXGNV3" 
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        >
+                        </iframe> 
+                        );
+                    case 929590:
+                        return(
+                            <iframe
+                            className="iframe"
+                            src="https://www.youtube.com/embed/nA8I-RG_zl4?si=ykyo27AwgdFPH9q2"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        >
+                        </iframe> 
+                        );
+                    case 1001311:
+                        return(
+                            <iframe
+                            className="iframe"
+                            src="https://www.youtube.com/embed/jnCefPQIH98?si=hfi6wkqYeEYjmoF2"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        >
+                        </iframe> 
+                        );
+                    case 704673:
+                        return(
+                            <iframe
+                            className="iframe"
+                            src="https://www.youtube.com/embed/vaUqBL2v7_w?si=5xSG34gd6A55tYUg"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        >
+                        </iframe> 
+                        );
+            case 639720:
+                return (
+                    <iframe
+                        className="iframe"
+                        src="https://www.youtube.com/embed/NISb51kjq7U?si=QIH2GjiY_QV9eozX"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                    >
+                    </iframe>
+                );
+                case 1143019:
+                return (
+                    <iframe
+                        className="iframe"
+                        src="https://www.youtube.com/embed/O8iOaiRyBeM?si=m0vbLFoc2OpE3nBd" 
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                    >
+                    </iframe>
+                );
+                case 639720:
+                    return (
+                        <iframe
+                            className="iframe"
+                            src="https://www.youtube.com/embed/mb2187ZQtBE?si=X9W_hRbI31WFsa7C" 
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        >
+                        </iframe>
+                    );
+                    case 719221:
+                    return (
+                        <iframe
+                            className="iframe"
+                            src="https://www.youtube.com/embed/CkbRBrmiKpc?si=HsfVGlQj947UUHEp"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        >
+                        </iframe>
+                    );
+                    case 614933:
+                    return (
+                        <iframe
+                            className="iframe"
+                            src="https://www.youtube.com/embed/TiJAfxzqDso?si=tEYLO_vckwpQtBvB"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        >
+                        </iframe>
+                    );
+                    case 1280768:
+                    return (
+                        <iframe
+                            className="iframe"
+                            src="https://www.youtube.com/embed/3gPGMqXUFl0?si=wMsNzINKOR2JhqDL"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        >
+                        </iframe>
+                    );
+                    case 1025463:
+                    return (
+                        <iframe
+                            className="iframe"
+                            src="https://www.youtube.com/embed/RTeuhVG7LXg?si=ouoDvc9kg4pZP5gP" 
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        >
+                        </iframe>
+                    );
+                    case 748783:
+                    return (
+                        <iframe
+                            className="iframe"
+                            src="https://www.youtube.com/embed/IeFWNtMo1Fs?si=6pe6vt36oalMBWlm" 
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        >
+                        </iframe>
+                    );
+                    case 1197830:
+                    return (
+                        <iframe
+                            className="iframe"
+                            src="https://www.youtube.com/embed/HT-hHtqVsBQ?si=wx3gADJ9aPhISMCw" 
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        >
+                        </iframe>
+                    );
+                    case 829402:
+                    return (
+                        <iframe
+                            className="iframe"
+                            src="https://www.youtube.com/embed/TwXgOMDONK8?si=fS8RbfGhpzsBNsCe"  
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        >
+                        </iframe>
+                    );
+                case 1026999:
+                return (
+                    <iframe
+                        className="iframe"
+                        src="https://www.youtube.com/embed/xF1bForWaRA?si=-7ZAcnE3UCc5X5N4" 
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                    >
+                    </iframe>
+                );
+            case 573435:
+                return (
+                    <iframe
+                        className="iframe"
+                        src="https://www.youtube.com/embed/hRFY_Fesa9Q?si=8RlunR7n--4OkQvU"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                    >
+                    </iframe>
+                );
+            default:
+                return <p style={{ color: '#000' }}>Unable to Load Video</p>
+
         }
     }
 
-    const videoChanger = (id:number)=>{
-        let videoElement: React.ReactNode;
-        switch(id){
-            case 1022789:
-                videoElement = <iframe className="iframe"  src="https://www.youtube.com/embed/LEjhY15eCx0?si=RV6Zo4PKGwQs4JvO" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                break;
-            case 653346:
-                videoElement = <iframe className="iframe" src="https://www.youtube.com/embed/XtFI7SNtVpY?si=bw_T5jkxNeCEUPAY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            break;
-            case 639720:
-                videoElement = <iframe  className="iframe" src="https://www.youtube.com/embed/NISb51kjq7U?si=QIH2GjiY_QV9eozX" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            break;
-            case 573435:
-                videoElement = <iframe className="iframe" src="https://www.youtube.com/embed/hRFY_Fesa9Q?si=8RlunR7n--4OkQvU" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            break;
-             
-        
-            default:
-                videoElement =<p>Unable to load</p>
-            
-            }
-            return (
-                <span>
-                    {videoElement}
-                </span>
-     
-            )
-        }
-    
-
-  return (
-    <div>
-      <div className="table">
-        <h2>Today's Top Pick for you</h2>
-        <div className="card">
-            {movies.map((items)=>(
-                <div className="movieContainer" key={items.id}>
-
-                    <div>
-                        {videoChanger(items.id)}
-                    </div>
-                   
- 
-                    
-                </div>
-            ))}
+    return (
+        <div className="videoplayer">
+            {videoChanger(Number(id))}
         </div>
-       
-    </div>
-    </div>
-  )
+    )
 }
 
 export default Video
+
