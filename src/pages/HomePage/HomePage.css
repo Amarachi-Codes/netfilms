@@ -409,4 +409,33 @@
     display: block;
     /* color: #fff; */
 }
+.watchVideo {
+    width: 100vw;
+}
+.watchvideo{
+    width: 300px;
+}
+.watchImg{
+    width: 90vw;
+}
+.watch .watchVideo .playVideo {
+    position: relative;
+    bottom: 250px;
+    left: 55px;
+    margin-left: -55px;
+    margin-bottom: -270px;
+    height: 270px;
+    width: 100vw;
+}
+.watch .watchWapper h2 {
+    padding: 38px 1rem 8px 1rem;
+    margin: 0;
+}
+
+.watch .watchWapper h5 {
+    padding-left: 1rem;
+}
+.watch {
+    gap: 20px;
+}
 }

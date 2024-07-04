@@ -50,21 +50,21 @@ const HomePage = () => {
                     </div>
                 </div> 
 
-                {/* <div className="watch">
+                 <div className="watch">
                     <div className="watchWapper">
                         <h2>Enjoy on your TV</h2>
                         <h5>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h5>
                     </div>
                     
                     <div className="watchVideo">
-                        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="" />
+                        <img className="watchImg" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="" />
                         <div className="playVideo">
-                            <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" autoPlay playsInline muted loop></video>
+                            <video className="watchvideo" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" autoPlay playsInline muted loop></video>
 
                         </div>
                     </div>
                    
-                </div> */}
+                </div> 
 
                 <div className="strangerWrapper">
                     <div className="strangerImg">
