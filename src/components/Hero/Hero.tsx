@@ -3,6 +3,7 @@ import top10 from "../../assets/top10.svg";
 import { FaPlay } from "react-icons/fa6";
 import { LuInfo } from "react-icons/lu";
 import { IoVolumeHighOutline } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 
 interface IHero {
     caption: string;
@@ -28,7 +29,7 @@ const Hero = ({ caption, age }: IHero) => {
                 <div className="buttonContainer">
                     <div className="playWrapper">
                         <FaPlay />
-                        <button className="play">Play</button>
+                        <NavLink to={"/play"}><button className="play">Play</button></NavLink>
                     </div>
                     <div className="infoWrapper">
                         <LuInfo color="#fff" />

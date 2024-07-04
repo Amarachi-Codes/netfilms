@@ -139,18 +139,18 @@ const Video = () => {
                     >
                     </iframe>
                 );
-                case 639720:
-                    return (
-                        <iframe
-                            className="iframe"
-                            src="https://www.youtube.com/embed/mb2187ZQtBE?si=X9W_hRbI31WFsa7C" 
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerPolicy="strict-origin-when-cross-origin"
-                            allowFullScreen
-                        >
-                        </iframe>
-                    );
+                // case 639720:
+                //     return (
+                //         <iframe
+                //             className="iframe"
+                //             src="https://www.youtube.com/embed/mb2187ZQtBE?si=X9W_hRbI31WFsa7C" 
+                //             title="YouTube video player"
+                //             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                //             referrerPolicy="strict-origin-when-cross-origin"
+                //             allowFullScreen
+                //         >
+                //         </iframe>
+                //     );
                     case 719221:
                     return (
                         <iframe
@@ -204,6 +204,18 @@ const Video = () => {
                         <iframe
                             className="iframe"
                             src="https://www.youtube.com/embed/IeFWNtMo1Fs?si=6pe6vt36oalMBWlm" 
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        >
+                        </iframe>
+                    );
+                    case 1020896:
+                    return (
+                        <iframe
+                            className="iframe"
+                            src="https://www.youtube.com/embed/qrmpti8QHco?si=aqb4_hhMWGPBxW_G" 
                             title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerPolicy="strict-origin-when-cross-origin"

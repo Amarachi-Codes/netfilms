@@ -6,6 +6,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import NetflixLogo from "../../assets/NetflixLogo.svg";
 import LangButton from "../../components/langButton/LangButton";
 import { NavLink } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 
 
@@ -27,6 +28,7 @@ const HomePage = () => {
                                 <LangButton title="English" list={["English", "Igbo","Yoruba", "Spanish","French"]} width="widthNormal"/>
                                 <NavLink to="/page/signin"><button className="btnSignin">Signin</button></NavLink>
                             </div>
+                            <GiHamburgerMenu className="displaynav"/>
                         </div>
                         <div className="centerBody">
                             <h1 className="heading">Unlimited movies, TV shows, and more</h1>
@@ -48,12 +50,12 @@ const HomePage = () => {
                     </div>
                 </div> 
 
-                <div className="watch">
+                {/* <div className="watch">
                     <div className="watchWapper">
                         <h2>Enjoy on your TV</h2>
                         <h5>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h5>
                     </div>
-                    {/* <div> */}
+                    
                     <div className="watchVideo">
                         <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="" />
                         <div className="playVideo">
@@ -61,12 +63,12 @@ const HomePage = () => {
 
                         </div>
                     </div>
-                    {/* </div> */}
-                </div>
+                   
+                </div> */}
 
                 <div className="strangerWrapper">
-                    <div>
-                        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="" />
+                    <div className="strangerImg">
+                        <img className="strangerImg" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="" />
                         <div className="stranger">
                             <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" alt="" />
                             <div>
@@ -97,7 +99,7 @@ const HomePage = () => {
 
                 <div className="profileWrapper">
                     <div>
-                        <img src="https://occ-0-5544-778.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png?r=f55" alt="" />
+                        <img src="https://occ-0-5544-778.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png?r=f55" className="profileimg" alt="" />
                     </div>
                     <div className="createProfile">
                         <h2>Create profiles for kids</h2>

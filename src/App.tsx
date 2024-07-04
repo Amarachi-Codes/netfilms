@@ -6,6 +6,7 @@ import SignIn from './pages/SignIn/SignIn';
 import HomePage from './pages/HomePage/HomePage';
 import Streaming from './pages/StreamingPage/Streaming';
 import Video from './components/Video/Video';
+import Play from './components/Play/Play';
 
 
 
@@ -22,7 +23,7 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='streaming' element={<Streaming />} />
         <Route path='/video/:id' element={<Video/>} />
-
+        <Route path='/play' element={<Play/>} />
       </Routes>
 
     </>

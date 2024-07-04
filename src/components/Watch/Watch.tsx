@@ -7,6 +7,7 @@ const Watch = () => {
     <div className="watchWrapper">
       <TopPicks/>
       <TopPicks/>
+      <TopPicks/>
     </div>
     </>
   )

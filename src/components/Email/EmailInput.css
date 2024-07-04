@@ -54,3 +54,21 @@
     color: #fff;
     margin-top: 30px;
     }
+
+    
+@media screen and (max-width:767px) {
+    .centerDown{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .centerDown .mail input {
+        width: 80vw;
+}
+.centerDown .getStartedBtn {
+    width: 85vw;
+    gap: 12px;
+    justify-content: center;
+}
+}
