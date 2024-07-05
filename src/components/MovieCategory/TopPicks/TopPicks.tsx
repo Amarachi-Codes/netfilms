@@ -25,6 +25,7 @@ const navigate = useNavigate()
 const apiKey = "ef68f6f884ee63a5d3115f1060501444";
     const videos = "https://api.themoviedb.org/3/movie/now_playing";
     
+    
     useEffect(()=>{
         fetchData()
     },[])

@@ -7,6 +7,8 @@ import NetflixLogo from "../../assets/NetflixLogo.svg";
 import LangButton from "../../components/langButton/LangButton";
 import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoCloseSharp } from "react-icons/io5";
+import { useState } from "react";
 
 
 
@@ -14,6 +16,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 const HomePage = () => {
 
+    const [showMenu, setShowMenu] = useState(false)
     return (
         <>
             <div>
@@ -28,8 +31,23 @@ const HomePage = () => {
                                 <LangButton title="English" list={["English", "Igbo","Yoruba", "Spanish","French"]} width="widthNormal"/>
                                 <NavLink to="/page/signin"><button className="btnSignin">Signin</button></NavLink>
                             </div>
-                            <GiHamburgerMenu className="displaynav"/>
+                            
+                            {showMenu ? <IoCloseSharp className="displaynav"  onClick={()=>setShowMenu(!showMenu)}/> : <GiHamburgerMenu className="displaynav" onClick={()=>setShowMenu(!showMenu)}/>}
+                           
+                                {showMenu &&(
+                            <div className="hamburger">
+                                <ul>
+                                <li><NavLink to={"/"}>Home</NavLink></li>
+                                    <li><NavLink to={""}>Language</NavLink></li>
+                                    <li><NavLink to={"/page/signin"}>SignIn</NavLink></li>
+                                    <li><NavLink to={""}>SignUp</NavLink></li>
+                                    <li><NavLink to={""}>Streaming</NavLink></li>
+                                    <li><NavLink to={""}>LogOut</NavLink></li>
+                                </ul>
+                            </div>
+                            )}
                         </div>
+                        
                         <div className="centerBody">
                             <h1 className="heading">Unlimited movies, TV shows, and more</h1>
                             <p className="watch">Watch anywhere. Cancel anytime.</p>
