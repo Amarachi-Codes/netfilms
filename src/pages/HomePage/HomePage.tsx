@@ -41,7 +41,7 @@ const HomePage = () => {
                                     <li><NavLink to={""}>Language</NavLink></li>
                                     <li><NavLink to={"/page/signin"}>SignIn</NavLink></li>
                                     <li><NavLink to={""}>SignUp</NavLink></li>
-                                    <li><NavLink to={""}>Streaming</NavLink></li>
+                                    <li><NavLink to={"/streaming"}>Streaming</NavLink></li>
                                     <li><NavLink to={""}>LogOut</NavLink></li>
                                 </ul>
                             </div>
