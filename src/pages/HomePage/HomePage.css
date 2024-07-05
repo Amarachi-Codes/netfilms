@@ -40,7 +40,8 @@
     display: flex;
     gap: 16px;
 }
-.displaynav{
+
+.displaynav {
     display: none;
     color: #fff;
 }
@@ -338,6 +339,15 @@
     padding: 24px 0;
 }
 
+@media screen and (max-width:375px) {
+    .stranger {
+        left: 50px;
+        width: 280px;
+        height: 100px;
+        bottom: 100px;
+    }
+}
+
 @media screen and (max-width:767px) {
     .homeConatainer {
         width: 100vw;
@@ -351,9 +361,11 @@
         padding: 0 1rem;
         /* align-items: center; */
     }
-    .stranger{
+
+    .stranger {
         left: 24px;
     }
+
     .strangerWrapper {
         display: flex;
         flex-wrap: wrap;
@@ -362,80 +374,116 @@
         width: 100vw;
         gap: 4rem;
         padding: 6rem 8rem;
-       
-}
-.profileWrapper {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    /* padding: 4rem 6rem; */
-   
-}
-.faq {
-    padding: 2rem;
-}
-.watch .watchVideo .playVideo {
-    /* position: absolute;
+
+    }
+
+    .profileWrapper {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        /* padding: 4rem 6rem; */
+
+    }
+
+    .faq {
+        padding: 2rem;
+    }
+
+    .watch .watchVideo .playVideo {
+        /* position: absolute;
     top: 100%;
     bottom: 30%;
     left: 47%; */
-    /* max-width: 73%; */
-    position: relative;
-    bottom: 390px;
-    left: 80px;
-    width: 480px;
-    margin-bottom: -270px;
-    height: 270px;
+        /* max-width: 73%; */
+        position: relative;
+        bottom: 390px;
+        left: 80px;
+        width: 480px;
+        margin-bottom: -270px;
+        height: 270px;
 
 
-}
-.profileimg{
-    width: 100vw;
-}
-.strangerImg{
-    width: 100vw;
-}
-.homeConatainer .homeWrapper .header .netflixLogo {
-    width: 100px;
-}
-.homeConatainer .homeWrapper .header .headerRight {
-    display: none;
-    
-}
-.homeConatainer .homeWrapper .header {
-    padding: 0.8rem 2rem 0.8rem 1rem;
-}
-.displaynav{
-    display: block;
-    /* color: #fff; */
-}
-.watchVideo {
-    width: 100vw;
-}
-.watchvideo{
-    width: 300px;
-}
-.watchImg{
-    width: 90vw;
-}
-.watch .watchVideo .playVideo {
-    position: relative;
-    bottom: 250px;
-    left: 55px;
-    margin-left: -55px;
-    margin-bottom: -270px;
-    height: 270px;
-    width: 100vw;
-}
-.watch .watchWapper h2 {
-    padding: 38px 1rem 8px 1rem;
-    margin: 0;
-}
+    }
 
-.watch .watchWapper h5 {
-    padding-left: 1rem;
-}
-.watch {
-    gap: 20px;
-}
+    .profileimg {
+        width: 100vw;
+    }
+
+    .strangerImg {
+        width: 100vw;
+    }
+
+    .homeConatainer .homeWrapper .header .netflixLogo {
+        width: 100px;
+    }
+
+    .homeConatainer .homeWrapper .header .headerRight {
+        display: none;
+
+    }
+
+    .homeConatainer .homeWrapper .header {
+        padding: 0.8rem 2rem 0.8rem 1rem;
+    }
+
+    .homeConatainer .homeWrapper .centerBody .heading {
+        padding: 2rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .homeConatainer .homeWrapper .centerBody .watch {
+        padding: 0 2rem;
+        text-align: center;
+    }
+    .homeConatainer .homeWrapper .centerBody .ready {
+        text-align: center;
+        padding: 0 2rem;
+    }
+    .homeConatainer .homeWrapper .centerBody .centerDown .mail input {
+        width: 80vw;
+    }
+    .displaynav {
+        display: block;
+        /* color: #fff; */
+    }
+
+    .watchVideo {
+        width: 100vw;
+    }
+
+    .watchvideo {
+        width: 300px;
+    }
+
+    .watchImg {
+        width: 90vw;
+    }
+
+    .watch .watchVideo .playVideo {
+        position: relative;
+        bottom: 250px;
+        left: 55px;
+        margin-left: -55px;
+        margin-bottom: -270px;
+        height: 270px;
+        width: 80vw;
+    }
+
+    .watch .watchWapper h2 {
+        padding: 38px 1rem 8px 1rem;
+        margin: 0;
+    }
+
+    .watchEverywhere .content2 {
+        display: none;
+    }
+
+    .watch .watchWapper h5 {
+        padding-left: 1rem;
+    }
+
+    .watch {
+        gap: 20px;
+    }
 }

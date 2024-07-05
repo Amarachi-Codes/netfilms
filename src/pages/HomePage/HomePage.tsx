@@ -50,7 +50,7 @@ const HomePage = () => {
                     </div>
                 </div> 
 
-                 <div className="watch">
+                  <div className="watch">
                     <div className="watchWapper">
                         <h2>Enjoy on your TV</h2>
                         <h5>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h5>
@@ -64,7 +64,7 @@ const HomePage = () => {
                         </div>
                     </div>
                    
-                </div> 
+                </div>  
 
                 <div className="strangerWrapper">
                     <div className="strangerImg">

@@ -27,6 +27,12 @@
     text-decoration: underline;
 }
 
+/* @media screen and (max-width:375px) {
+    .footerWrapper{
+        padding: 2rem;
+}
+    } */
+
 @media screen and (max-width:767px) {
     .footerWrapper{
         flex-wrap: wrap;
