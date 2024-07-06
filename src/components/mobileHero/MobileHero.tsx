@@ -24,7 +24,7 @@ const MobileHero = () => {
                 <FaPlay />
                 <NavLink to={""}><button className="play">My List</button></NavLink>
               </div>
-              <button></button>
+              
             </div>
           </div>
         </div>

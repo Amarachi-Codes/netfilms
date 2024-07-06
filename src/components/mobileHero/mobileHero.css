@@ -14,7 +14,8 @@
 
 .mHImageTitle {
     width: 240px;
-    margin-top: 140px;
+    /* margin-top: 140px; */
+    margin-top: 45%;
 }
 .mHContainer .mHImage .genre{
    /* padding: 0 12px; */
