@@ -1,0 +1,24 @@
+.profile-icon{
+    width: 18px;
+    height: 16px;
+}
+.bottomContainer{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1.2rem 2rem; 
+}
+.bottomContainer div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+.bottomContainer div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: small;
+}
+.bottomIcon{
+    color: #fff;
+}

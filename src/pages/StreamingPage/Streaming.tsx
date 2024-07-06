@@ -8,6 +8,7 @@ import Footer from "../../components/Footer/Footer";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import MobileNav from "../../components/mobileNav/MobileNav";
 import MobileHero from "../../components/mobileHero/MobileHero";
+import BottomNav from "../../components/BottomNav/BottomNav";
 
 
 const Streaming = () => {
@@ -46,6 +47,9 @@ const Streaming = () => {
         </div>
         <div className="footerStreaming">
         <Footer/>
+        </div>
+        <div className="bottom">
+        <BottomNav/>
         </div>
       </div>
     </>
