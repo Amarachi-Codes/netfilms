@@ -71,7 +71,7 @@ const apiKey = "ef68f6f884ee63a5d3115f1060501444";
 
   return (
     <>
-    <h2>Today's Top Pick for you</h2>
+    <h2 className="TopTitle">Today's Top Pick for you</h2>
     <div className="scrollableContainer">
     <div className="scrollLeft">
         
@@ -86,11 +86,11 @@ const apiKey = "ef68f6f884ee63a5d3115f1060501444";
                 <div className="movieContainer" key={items.id} >
                     {items.poster_path &&(
                         <div onClick={()=>playVideo(items.id)}>
-                        <img src={`https://image.tmdb.org/t/p/w200${items.poster_path}`} alt={`${items.title} Poster`} />
+                        <img src={`https://image.tmdb.org/t/p/w200${items.poster_path}`} alt={`${items.title} Poster`} className="imgPoster"/>
                         </div>
                     )}
                     
-                    <h3 className="myID">{items.id}</h3>
+                    {/* <h3 className="myID">{items.id}</h3> */}
  
                     {/* <h3 style={{color:'#fff'}}>{items.title}</h3> */}
                 </div>

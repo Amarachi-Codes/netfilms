@@ -44,7 +44,9 @@ const Streaming = () => {
         <div className="continue-watching">
 
         </div>
+        <div className="footerStreaming">
         <Footer/>
+        </div>
       </div>
     </>
   )

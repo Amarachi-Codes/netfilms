@@ -64,4 +64,22 @@ h2{
 .next{
     font-size: 60px;
 }
-
+@media screen and (max-width:767px) {
+    .TopTitle{
+        font-size: 18px;
+        padding-top: 16px;
+        padding-bottom: 24px;
+    }
+    .scrollLeft{
+        display: none;
+    }
+    .scrollRight{
+        display: none;
+    }
+    .imgPoster{
+        width: 120px;
+    }
+    .card{
+        padding: 2em 0;
+    }
+}
