@@ -1,0 +1,26 @@
+.mobileNav{
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+    /* .myNetflixLogo{
+        width: 100px;
+    }
+    .navWrapper{
+        display: none;
+    } */
+    .mobileNav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 1rem;
+        color: #fff;
+        background-color: rgb(59, 10, 10);
+        
+    }
+    .mobileNav .iconLeft{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+}

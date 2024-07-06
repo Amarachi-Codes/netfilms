@@ -76,3 +76,18 @@
     color: #fff;
     border-left: 2px solid #fff;
 }
+
+@media screen and (max-width:767px) {
+    .hero-wrapper .movieDescription{
+        display: none;
+    }
+    .playContent .buttonContainer .infoWrapper{
+        display: none;
+    }
+    .playContent .rating{
+        display: none;
+    }
+    /* .atlas-wrapper .atlas-img {
+        width: 100%;
+     } */
+}

@@ -45,7 +45,7 @@ const HomePage = () => {
                                     <li><NavLink to={""}>LogOut</NavLink></li>
                                 </ul>
                             </div>
-                            )}
+                            )} 
                         </div>
                         
                         <div className="centerBody">

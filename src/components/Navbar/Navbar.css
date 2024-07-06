@@ -7,7 +7,7 @@
     position: sticky;
     top:0;
 }
-.netflixLogo{
+.myNetflixLogo{
     width: 160px;
 }
 .navWrapper .navLeft{
@@ -49,8 +49,13 @@
 
 }
 
+
 @media screen and (max-width:767px) {
-    .netflixLogo{
+    .myNetflixLogo{
         width: 100px;
     }
+    .navWrapper{
+        display: none;
+    }
+    
 }

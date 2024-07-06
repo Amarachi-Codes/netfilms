@@ -1,0 +1,25 @@
+.mHContainer{
+    background-color: rgb(37, 5, 5);
+    padding: 1rem;
+}
+.mHContainer .mHImage{
+ background: url("https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABRsetIvjfEjF1NjADBFoYyaln0rPhcAqetVs107OlWIVO1XODfvVT9FsUSysxWe9zS6XxmlvggYyeqgfy4PA2e3-puzRLox-Cx2-.webp?r=32a")center -80px ;
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 50vh;
+
+}
+.mHImageTitle{
+    width: 200px;
+    margin-top: 160px;
+}
+.genre ul{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 12px 0;
+}
+.genre ul li{
+    color: white;
+}
