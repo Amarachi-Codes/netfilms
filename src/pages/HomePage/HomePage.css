@@ -348,18 +348,48 @@
         bottom: 100px;
     }
 
+    .homeConatainer {
+        width: 100vw;
+        overflow-x: unset;
+        height: 72vh;
+    }
+
+    .homeConatainer .homeWrapper {
+        gap: 0vh;
+    }
+
     .homeConatainer .homeWrapper .hamburger {
-        width: 50vw;
-        background-color: black;
-        /* display: none; */
+        width: 70vw;
+        background-color: #000;
         z-index: 10;
-        height: 80vh;
+        height: 50vh;
         margin-top: 0.8rem;
+        position: absolute;
+        left: 30%;
+        top: 10%;
+
+    }
+
+    .hamburger ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2.5rem;
+        gap: 24px;
+        /* font-size: 24px; */
+        list-style: none;
+
+    }
+
+    .hamburger ul li a:hover {
+        color: red;
     }
 
     .hamburger ul li a {
         text-decoration: none;
         color: #fff;
+
+
     }
 
     .homeConatainer .homeWrapper .header {
@@ -367,13 +397,167 @@
 
     }
 
+    .watch {
+        flex-wrap: wrap;
+        width: 100vw;
+        padding: 0 1rem;
+       
+    }
+
+    .stranger {
+        left: 24px;
+    }
+
+    .strangerWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        gap: 4rem;
+        padding: 6rem 8rem;
+
+    }
+
+    .profileWrapper {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        /* padding: 4rem 6rem; */
+
+    }
+
     .displaynav {
         margin-right: 20px;
     }
 
-}
+    .faq {
+        padding: 2rem;
+    }
 
-@media screen and (max-width:767px) {
+    .watch .watchVideo .playVideo {
+        /* position: absolute;
+    top: 100%;
+    bottom: 30%;
+    left: 47%; */
+        /* max-width: 73%; */
+        position: relative;
+        bottom: 390px;
+        left: 80px;
+        width: 480px;
+        margin-bottom: -270px;
+        height: 270px;
+
+
+    }
+
+    .profileimg {
+        width: 100vw;
+    }
+
+    .strangerImg {
+        width: 100vw;
+    }
+
+    .homeConatainer .homeWrapper .header .netflixLogo {
+        width: 100px;
+    }
+
+    .homeConatainer .homeWrapper .header .headerRight {
+        display: none;
+
+    }
+
+    .homeConatainer .homeWrapper .header {
+        padding: 0.8rem 0 0.8rem 1rem;
+    }
+
+    .homeConatainer .homeWrapper .centerBody .heading {
+        padding: 1.5rem 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .homeConatainer .homeWrapper .centerBody .watch {
+        padding: 0 3rem;
+        text-align: center;
+        background-color: transparent;
+        border: none;
+        font-size: 1rem;
+    }
+
+    .homeConatainer .homeWrapper .centerBody .ready {
+        text-align: center;
+        padding: 0 2rem;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        font-size: 1rem;
+        line-height: 1;
+    }
+    .homeConatainer .homeWrapper .centerBody .centerDown {
+        gap: 16px;
+    }
+    .homeConatainer .homeWrapper .centerBody .centerDown .mail {
+        line-height: 1;
+    }
+    .homeConatainer .homeWrapper .centerBody .centerDown .mail input {
+        width: 72vw;
+    }
+    .homeConatainer .homeWrapper .centerBody .centerDown .getStartedBtn {
+        padding: 4px 16px;
+    }
+    .centerDown .getStartedBtn {
+        width:fit-content;
+        gap: 8px;
+    }
+    .homeConatainer .homeWrapper .centerBody .centerDown .getStartedBtn button {
+        font-size: 1rem;
+    }
+    .displaynav {
+        display: block;
+        /* color: #fff; */
+    }
+    .watchVideo {
+        width: 100vw;
+    }
+    .watchvideo {
+        width: 300px;
+    }
+
+    .watchImg {
+        width: 90vw;
+    }
+
+    .watch .watchVideo .playVideo {
+        position: relative;
+        bottom: 250px;
+        left: 55px;
+        margin-left: -55px;
+        margin-bottom: -270px;
+        height: 270px;
+        width: 80vw;
+    }
+
+    .watch .watchWapper h2 {
+        padding: 38px 1rem 8px 1rem;
+        margin: 0;
+    }
+
+    .watchEverywhere .content2 {
+        display: none;
+    }
+
+    .watch .watchWapper h5 {
+        padding-left: 1rem;
+    }
+
+    .watch {
+        gap: 20px;
+    }
+}
+    
+
+@media screen and (min-width:391px)and (max-width:767px) {
     .homeConatainer {
         width: 100vw;
         overflow-x: unset;
