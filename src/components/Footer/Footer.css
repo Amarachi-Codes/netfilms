@@ -37,6 +37,7 @@
     .footerWrapper{
         flex-wrap: wrap;
         gap: 20px;
-        padding: 5rem 10rem;
+        padding: 5rem 2rem;
+        background-color: black;
     } 
 }
