@@ -14,7 +14,7 @@
     gap: 4px;
     align-items: center;
 }
-.bottomContainer div a{
+.bottomNavTitle{
     text-decoration: none;
     color: #fff;
     font-size: small;
