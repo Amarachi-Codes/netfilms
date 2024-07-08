@@ -25,7 +25,7 @@ const SignIn = () => {
                 <p>Forgot password?</p>
               </div>
             </form>
-            <div className="bottom">
+            <div className="bottomCheckbox">
               <div className="checkboxWrapper">
                 <input type="checkbox" name="" id="" />
                 <label htmlFor="">Remember me</label>

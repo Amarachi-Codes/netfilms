@@ -82,7 +82,7 @@
     color: rgb(133, 133, 133);
 }
 
-.signinWrapper .signIn .bottom{
+.signinWrapper .signIn .bottomCheckbox{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -90,7 +90,7 @@
     font-size: 16px;
 }
 
-.signinWrapper .signIn .bottom .checkboxWrapper{
+.signinWrapper .signIn .bottomCheckbox .checkboxWrapper{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -99,7 +99,7 @@
     }
     
 
-.signinWrapper .signIn .bottom .checkboxWrapper label{
+.signinWrapper .signIn .bottomCheckbox .checkboxWrapper label{
     padding-left: 0.5rem;
 }
 
@@ -109,7 +109,7 @@
  width: 1.125rem;
 } */
 
-.signinWrapper .signIn .bottom .new{
+.signinWrapper .signIn .bottomCheckbox .new{
     margin-top: 16px;
     color: #8c8c8c;
     text-align: left;
@@ -119,10 +119,10 @@
     font-weight: 400;
 }
 
-.signinWrapper .signIn .bottom .new .signup{
+.signinWrapper .signIn .bottomCheckbox .new .signup{
     color: rgb(255, 255, 255);
 }
-.signinWrapper .signIn .bottom .protected{ 
+.signinWrapper .signIn .bottomCheckbox .protected{ 
 color: #8c8c8c;
 font-size: 13px;
 text-align: left;
@@ -130,13 +130,13 @@ margin-top: 11px;
 
 }
 
-.signinWrapper .signIn .bottom .protected p button{
+.signinWrapper .signIn .bottomCheckbox .protected p button{
     background-color: transparent;
     border: none;
     padding: 0;
 }
 
-.signinWrapper .signIn .bottom .protected p button a{
+.signinWrapper .signIn .bottomCheckbox .protected p button a{
     text-decoration: none;
     color: #0071eb;
     cursor: pointer;
