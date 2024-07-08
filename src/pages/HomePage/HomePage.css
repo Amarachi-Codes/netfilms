@@ -400,12 +400,12 @@
     .watch {
         flex-wrap: wrap;
         width: 100vw;
-        padding: 0 1rem;
-       
+        padding: 0 2rem;
+
     }
 
     .stranger {
-        left: 24px;
+        left: 45px;
     }
 
     .strangerWrapper {
@@ -415,7 +415,7 @@
         justify-content: center;
         width: 100vw;
         gap: 4rem;
-        padding: 6rem 8rem;
+        padding: 6rem 2rem;
 
     }
 
@@ -494,35 +494,46 @@
         font-size: 1rem;
         line-height: 1;
     }
+
     .homeConatainer .homeWrapper .centerBody .centerDown {
         gap: 16px;
     }
+
     .homeConatainer .homeWrapper .centerBody .centerDown .mail {
         line-height: 1;
     }
+
     .homeConatainer .homeWrapper .centerBody .centerDown .mail input {
         width: 72vw;
     }
+
     .homeConatainer .homeWrapper .centerBody .centerDown .getStartedBtn {
         padding: 4px 16px;
     }
+
     .centerDown .getStartedBtn {
-        width:fit-content;
+        width: fit-content;
         gap: 8px;
     }
+
     .homeConatainer .homeWrapper .centerBody .centerDown .getStartedBtn button {
         font-size: 1rem;
     }
+
     .displaynav {
         display: block;
         /* color: #fff; */
     }
+
     .watchVideo {
         width: 100vw;
     }
+
     .watchvideo {
         width: 300px;
+        padding: 28px;
     }
+   
 
     .watchImg {
         width: 90vw;
@@ -530,8 +541,10 @@
 
     .watch .watchVideo .playVideo {
         position: relative;
-        bottom: 250px;
-        left: 55px;
+        /* bottom: 250px;
+        left: 55px; */
+        bottom: 230px;
+        left: 65px;
         margin-left: -55px;
         margin-bottom: -270px;
         height: 270px;
@@ -554,8 +567,23 @@
     .watch {
         gap: 20px;
     }
+
+    .profileWrapper {
+        padding: 4rem 2rem;
+        text-align: center;
+    }
+    .watchEverywhere {
+        padding: 8rem 2rem;
+        text-align: center;
+    }
+    .watchEverywhere .watchContent h1 {
+        font-size: 28px;
+    }
+    .center {
+        text-align: center;
+    }
 }
-    
+
 
 @media screen and (min-width:391px)and (max-width:767px) {
     .homeConatainer {
@@ -611,12 +639,12 @@
         flex-wrap: wrap;
         /* flex-direction: column; */
         width: 100vw;
-        padding: 0 1rem;
+        padding: 0 2rem;
         /* align-items: center; */
     }
 
     .stranger {
-        left: 24px;
+        left: 38px;
     }
 
     .strangerWrapper {
@@ -626,7 +654,7 @@
         justify-content: center;
         width: 100vw;
         gap: 4rem;
-        padding: 6rem 8rem;
+        padding: 6rem 2rem;
 
     }
 
@@ -705,44 +733,54 @@
         font-size: 1rem;
         line-height: 1;
     }
+
     .homeConatainer .homeWrapper .centerBody .centerDown {
         gap: 16px;
     }
+
     .homeConatainer .homeWrapper .centerBody .centerDown .mail {
         line-height: 1;
     }
+
     .homeConatainer .homeWrapper .centerBody .centerDown .mail input {
         width: 72vw;
     }
+
     .homeConatainer .homeWrapper .centerBody .centerDown .getStartedBtn {
         padding: 4px 16px;
     }
+
     .centerDown .getStartedBtn {
-        width:fit-content;
+        width: fit-content;
         gap: 8px;
     }
+
     .homeConatainer .homeWrapper .centerBody .centerDown .getStartedBtn button {
         font-size: 1rem;
     }
+
     .displaynav {
         display: block;
         /* color: #fff; */
     }
+
     .watchVideo {
         width: 100vw;
     }
+
     .watchvideo {
         width: 300px;
+        padding: 34px;
     }
 
     .watchImg {
         width: 90vw;
     }
-
+    
     .watch .watchVideo .playVideo {
         position: relative;
         bottom: 250px;
-        left: 55px;
+        left: 85px;
         margin-left: -55px;
         margin-bottom: -270px;
         height: 270px;
@@ -765,4 +803,32 @@
     .watch {
         gap: 20px;
     }
+
+    .profileWrapper {
+        padding: 4rem 2rem;
+        text-align: center;
+    }
+
+    .watchEverywhere {
+        padding: 8rem 2rem;
+        text-align: center;
+    }
+    .watchEverywhere .watchContent h1 {
+        font-size: 28px;
+    }
+    .center {
+        text-align: center;
+    }
+}
+@media screen and (width:540px) {
+    .stranger{
+        left: 90px;
+    }
+    .watchvideo{
+        width: 400px;
+    }
+    .watch .watchVideo .playVideo {
+        bottom: 320px;
+        left: 95px;
+}
 }
